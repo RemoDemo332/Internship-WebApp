@@ -11,6 +11,33 @@ function Navbar() {
 
   const showSidebar = () => setSidebar(!sidebar);
 
+  /* Function to set header text based on the current page */
+  const changeTitle = () => {
+    switch (window.location.pathname) {
+      case "/Brothers":
+        return "Brothers";
+      case "/Barrels":
+        return "Barrels";
+      case "/Horizontals":
+        return "Horizontals";
+      case "/Laser":
+        return "Laser Engraver/Saw";
+      case "/Lathe":
+        return "Lathe Department";
+      case "/Model_Shop":
+        return "Model Shop";
+      case "/Mori_Tsugami":
+        return "Mori/Tsugami";
+      case "/Uppers_Lowers":
+        return "Uppers & Lowers";
+      case "/Verticals":
+        return "Verticals";
+      default:
+        return "Dashboard";
+    }
+  };
+  const page_title = changeTitle();
+
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
@@ -18,6 +45,9 @@ function Navbar() {
           <Link to="#" className="menu-bars">
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
+          <div id="title-container">
+            <h1 id="page-title">{page_title}</h1>
+          </div>
         </div>
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
           <ul className="nav-menu-items" onClick={showSidebar}>

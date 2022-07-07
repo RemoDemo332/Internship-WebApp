@@ -34,8 +34,8 @@ export const SidebarData = [
     cName: "nav-text",
   },
   {
-    title: "Lathe Dept",
-    path: "/lathe",
+    title: "Lathe Department",
+    path: "/Lathe",
     icon: <IoIcons.IoIosReturnRight />,
     cName: "nav-text",
   },

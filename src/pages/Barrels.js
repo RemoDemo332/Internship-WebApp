@@ -6,25 +6,25 @@ import JobTableInactive from "../components/JobTableInactive";
 const Barrels = () => {
   return (
     <div className="columnContainer">
-      <Grid container spacing={8} columns={27}>
-        <Grid item xs={3}>
+      <Grid container spacing={8} columns={24}>
+        <Grid item xs={2}>
           <div id="individualCol">
             <h2 id="colHeader">Machine #</h2>
           </div>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={7}>
           <div id="individualCol">
             <h2 id="colHeader">At Bat</h2>
             <JobTableInactive />
           </div>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={7}>
           <div id="individualCol">
             <h2 id="colHeader">On Deck</h2>
             <JobTableInactive />
           </div>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={7}>
           <div id="individualCol">
             <h2 id="colHeader">In the Hole</h2>
             <JobTableInactive />

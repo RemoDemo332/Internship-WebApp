@@ -1,8 +1,10 @@
 .columnContainer {
-  width: 99vw;
+  width: 100vw;
   height: 100vh;
   margin-top: 0px;
   background-color: #f8f8ff;
+  margin-right: 0px;
+  padding-right: 20px;
 }
 
 #colHeader {
