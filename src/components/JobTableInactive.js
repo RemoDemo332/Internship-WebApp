@@ -4,8 +4,41 @@ import * as BsIcons from "react-icons/bs";
 import "./JobTable.css";
 import Checkbox from "@mui/material/Checkbox";
 import { green } from "@mui/material/colors";
+import uniqueID from "../utils/uniqueID";
 
 function JobTableInactive() {
+  const tableID = uniqueID();
+  const readyColor = "#ea3c53";
+  var toolkitCheck = false,
+    packetCheck = false,
+    materialCheck = false;
+  /* Function to update boolean of checkbox when clicked */
+  const updateToolkit = () => {
+    toolkitCheck = !toolkitCheck;
+    checkReadiness();
+  };
+  const updatePacket = () => {
+    packetCheck = !packetCheck;
+    checkReadiness();
+  };
+  const updateMaterial = () => {
+    materialCheck = !materialCheck;
+    checkReadiness();
+  };
+  /* Change the color of the left tab on each table when all of the checkboxes are true */
+  const checkReadiness = () => {
+    if (
+      toolkitCheck === true &&
+      packetCheck === true &&
+      materialCheck === true
+    ) {
+      console.log("changed");
+      document.getElementById(tableID).style.backgroundColor = "#43a047";
+    } else {
+      console.log("not changed");
+      document.getElementById(tableID).style.backgroundColor = "#ea3c53";
+    }
+  };
   return (
     <Box
       sx={{
@@ -27,8 +60,8 @@ function JobTableInactive() {
         >
           <tbody>
             <tr>
-              <td rowSpan="4" bgcolor="#ea3c53">
-                <div id="dragtab">
+              <td rowSpan="4" bgcolor={readyColor} id={tableID}>
+                <div>
                   <BsIcons.BsThreeDotsVertical />
                 </div>
               </td>
@@ -44,12 +77,13 @@ function JobTableInactive() {
               <td>DATA</td>
               <td>DATA</td>
               <td>
-                <Checkbox
+                <Checkbox /* Update color of checkbox to green when checked */
                   sx={{
                     color: "#ea3c53",
                     "&.Mui-checked": { color: green[600] },
                   }}
                   size="small"
+                  onClick={updateToolkit}
                 />
               </td>
             </tr>
@@ -69,6 +103,7 @@ function JobTableInactive() {
                     "&.Mui-checked": { color: green[600] },
                   }}
                   size="small"
+                  onClick={updatePacket}
                 />
               </td>
               <td>
@@ -78,6 +113,7 @@ function JobTableInactive() {
                     "&.Mui-checked": { color: green[600] },
                   }}
                   size="small"
+                  onClick={updateMaterial}
                 />
               </td>
             </tr>
