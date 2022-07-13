@@ -1,17 +1,25 @@
 .columnContainer {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   margin-top: 0px;
   background-color: #f8f8ff;
   margin-right: 0px;
   padding-right: 20px;
+  overflow: hidden;
+}
+
+.css-172kgz0-MuiPaper-root {
+  overflow: hidden;
 }
 
 #colHeader {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 #individualCol {
-  height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }

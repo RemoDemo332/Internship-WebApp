@@ -1,14 +1,10 @@
-.inactiveTable,
-.activeTable {
+.inactiveTable {
   text-align: center;
   overflow: hidden;
   border-radius: 4px;
   background-color: #f2f2f2;
+  height: 250px;
   /* -1px margin to align cell lines with outer border */
   margin-top: -1px;
   margin-left: -1px;
-}
-
-#colHeader {
-  margin-top: 20px;
 }
