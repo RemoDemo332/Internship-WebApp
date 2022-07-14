@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Barrels from "./pages/Barrels";
+import BarrelsDetail from "./pages/subpages/BarrelsDetail";
 import Brothers from "./pages/Brothers";
 import Horizontals from "./pages/Horizontals";
 import Laser from "./pages/Laser";
@@ -28,6 +29,9 @@ function App() {
           <Route path="/Mori_Tsugami" element={<Mori_Tsugami />} />
           <Route path="/Uppers_Lowers" element={<Uppers_Lowers />} />
           <Route path="/Verticals" element={<Verticals />} />
+        </Routes>
+        <Routes>
+          <Route path="/Barrels/Details" element={<BarrelsDetail />} />
         </Routes>
       </Router>
     </>

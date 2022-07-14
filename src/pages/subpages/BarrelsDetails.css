@@ -1,0 +1,5 @@
+.columnContainer {
+  background-color: #f8f8ff;
+  height: 100vh;
+  overflow-y: scroll;
+}

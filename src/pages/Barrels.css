@@ -4,7 +4,7 @@
   margin-top: 0px;
   background-color: #f8f8ff;
   margin-right: 0px;
-  padding-right: 20px;
+  padding-right: 34px;
   overflow: hidden;
 }
 
@@ -22,4 +22,17 @@
   height: auto;
   display: flex;
   flex-direction: column;
+  padding-left: 0px;
+}
+
+#controlCol {
+  flex-direction: row;
+  width: 80px;
+}
+
+#gridControlCol {
+  padding-left: 0px;
+  display: flex;
+  justify-content: left;
+  width: 72px;
 }
