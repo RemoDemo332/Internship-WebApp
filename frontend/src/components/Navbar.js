@@ -18,17 +18,19 @@ function Navbar() {
         return "Brothers";
       case "/Barrels":
         return "Barrels";
+      case "/Barrels/Details":
+        return "Barrels";
       case "/Horizontals":
         return "Horizontals";
       case "/Laser":
         return "Laser Engraver/Saw";
       case "/Lathe":
         return "Lathe Department";
-      case "/Model_Shop":
+      case "/ModelShop":
         return "Model Shop";
-      case "/Mori_Tsugami":
+      case "/MoriTsugami":
         return "Mori/Tsugami";
-      case "/Uppers_Lowers":
+      case "/UppersLowers":
         return "Uppers & Lowers";
       case "/Verticals":
         return "Verticals";
@@ -36,7 +38,6 @@ function Navbar() {
         return "Dashboard";
     }
   };
-  const page_title = changeTitle();
 
   return (
     <>
@@ -46,7 +47,7 @@ function Navbar() {
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
           <div id="title-container">
-            <h1 id="page-title">{page_title}</h1>
+            <h1 id="page-title">{changeTitle()}</h1>
           </div>
         </div>
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>

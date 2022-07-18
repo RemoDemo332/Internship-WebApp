@@ -3,7 +3,6 @@
   height: auto;
   margin-top: 0px;
   background-color: #f8f8ff;
-  margin-right: 0px;
   padding-right: 34px;
   overflow: hidden;
 }
@@ -12,26 +11,32 @@
   overflow: hidden;
 }
 
-#colHeader {
+.colHeader {
   text-align: center;
   margin-bottom: 20px;
   margin-top: 20px;
 }
 
-#individualCol {
+.machineColHeader {
+  text-align: center;
+  margin-bottom: 28px;
+  margin-top: 20px;
+}
+
+.individualCol {
   height: auto;
   display: flex;
   flex-direction: column;
   padding-left: 0px;
 }
 
-#controlCol {
+.controlCol {
   flex-direction: row;
   width: 80px;
 }
 
-#gridControlCol {
-  padding-left: 0px;
+.gridControlCol {
+  padding-left: 6px;
   display: flex;
   justify-content: left;
   width: 72px;

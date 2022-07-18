@@ -8,9 +8,9 @@ import Brothers from "./pages/Brothers";
 import Horizontals from "./pages/Horizontals";
 import Laser from "./pages/Laser";
 import Lathe from "./pages/Lathe";
-import Model_Shop from "./pages/Model_Shop";
-import Mori_Tsugami from "./pages/Mori_Tsugami";
-import Uppers_Lowers from "./pages/Uppers_Lowers";
+import ModelShop from "./pages/ModelShop";
+import MoriTsugami from "./pages/MoriTsugami";
+import UppersLowers from "./pages/UppersLowers";
 import Verticals from "./pages/Verticals";
 
 function App() {
@@ -25,12 +25,11 @@ function App() {
           <Route path="/Horizontals" element={<Horizontals />} />
           <Route path="/Laser" element={<Laser />} />
           <Route path="/Lathe" element={<Lathe />} />
-          <Route path="/Model_Shop" element={<Model_Shop />} />
-          <Route path="/Mori_Tsugami" element={<Mori_Tsugami />} />
-          <Route path="/Uppers_Lowers" element={<Uppers_Lowers />} />
+          <Route path="/ModelShop" element={<ModelShop />} />
+          <Route path="/MoriTsugami" element={<MoriTsugami />} />
+          <Route path="/UppersLowers" element={<UppersLowers />} />
           <Route path="/Verticals" element={<Verticals />} />
-        </Routes>
-        <Routes>
+          {/* End of Navbar, start of detail pages */}
           <Route path="/Barrels/Details" element={<BarrelsDetail />} />
         </Routes>
       </Router>

@@ -1,0 +1,17 @@
+.tableContainer {
+  width: 100vw;
+  height: auto;
+  margin-top: 0px;
+  background-color: #f8f8ff;
+  padding-right: 0px;
+  padding-right: 34px;
+  overflow: hidden;
+}
+
+#detailTable {
+  background-color: #f8f8ff;
+}
+
+#detailControlCol {
+  padding-left: 46px;
+}

@@ -4,11 +4,9 @@ import * as BsIcons from "react-icons/bs";
 import "./JobTable.css";
 import Checkbox from "@mui/material/Checkbox";
 import { green } from "@mui/material/colors";
-import uniqueID from "../utils/uniqueID";
 import { TextField } from "@mui/material";
 
-function JobTableInactive() {
-  const tableID = uniqueID();
+function JobTableInactive(props) {
   const readyColor = "#ea3c53";
   var toolkitCheck = false,
     packetCheck = false,
@@ -33,11 +31,9 @@ function JobTableInactive() {
       packetCheck === true &&
       materialCheck === true
     ) {
-      console.log("changed");
-      document.getElementById(tableID).style.backgroundColor = "#43a047";
+      document.getElementById(props.readyID).style.backgroundColor = "#43a047";
     } else {
-      console.log("not changed");
-      document.getElementById(tableID).style.backgroundColor = "#ea3c53";
+      document.getElementById(props.readyID).style.backgroundColor = "#ea3c53";
     }
   };
   return (
@@ -62,7 +58,7 @@ function JobTableInactive() {
           >
             <tbody>
               <tr>
-                <td rowSpan="4" bgcolor={readyColor} id={tableID}>
+                <td rowSpan="4" bgcolor={readyColor} id={props.readyID}>
                   <div>
                     <BsIcons.BsThreeDotsVertical />
                   </div>
@@ -122,7 +118,6 @@ function JobTableInactive() {
               <tr>
                 <td colSpan="6">
                   <TextField
-                    id="outline-commentbox"
                     placeholder="Enter Comment"
                     variant="standard"
                     size="small"

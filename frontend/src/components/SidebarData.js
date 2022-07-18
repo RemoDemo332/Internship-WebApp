@@ -41,19 +41,19 @@ export const SidebarData = [
   },
   {
     title: "Model Shop",
-    path: "/Model_Shop",
+    path: "/ModelShop",
     icon: <IoIcons.IoIosReturnRight />,
     cName: "nav-text",
   },
   {
     title: "Mori & Tsugami",
-    path: "/Mori_Tsugami",
+    path: "/MoriTsugami",
     icon: <IoIcons.IoIosReturnRight />,
     cName: "nav-text",
   },
   {
     title: "Uppers & Lowers",
-    path: "/Uppers_Lowers",
+    path: "/UppersLowers",
     icon: <IoIcons.IoIosReturnRight />,
     cName: "nav-text",
   },

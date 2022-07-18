@@ -16,9 +16,9 @@
 .Horizontals,
 .Laser,
 .Lathe,
-.Model_Shop,
-.Mori_Tsugami,
-.Uppers_Lowers,
+.ModelShop,
+.MoriTsugami,
+.UppersLowers,
 .Verticals {
   display: flex;
   height: 90vh;
