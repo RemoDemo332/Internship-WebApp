@@ -15,3 +15,7 @@
 #detailControlCol {
   padding-left: 46px;
 }
+
+.ht_clone_top {
+  display: none !important;
+}
